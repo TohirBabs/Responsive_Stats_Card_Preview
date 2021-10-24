@@ -7,16 +7,19 @@
 }
 
 body{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     height: 100vh;
     background-color: hsl(233, 47%, 7%);
+}
+
+image{
+    display: block;
 }
 
 h1 {
@@ -24,18 +27,6 @@ h1 {
     font-size: 27px;
 }
 
-h2 {
-    font-family: 'Inter';
-    font-size: 25px;
-}
-
-h3 {
-    color:hsla(0, 0%, 100%, 0.75);
-    font-family: 'Lexend Deca';
-    font-size: 12px;
-    letter-spacing: 1.5px;
-    font-weight: 100;
-}
 
 p {
     font-family: 'Inter', sans-serif;
@@ -43,6 +34,11 @@ p {
     font-size: 15px;
     line-height: 1.5em;
     word-spacing: 2px7;
+}
+
+ul{
+    padding: 0;
+    list-style-type: none;
 }
 
 /* general styles */
@@ -78,9 +74,6 @@ p {
     padding: 30px;
 }
 
-.info-head {
-
-}
 
 .info span {
     color: hsl(277, 64%, 61%);
@@ -92,12 +85,27 @@ p {
     color:hsla(0, 0%, 100%, 0.75);
 }
 
+
+
+.stat-num {
+    font-family: 'Inter';
+    font-size: 25px;
+    font-weight: 600;
+}
+
 .stat-nam {
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca';
+    font-size: 12px;
+    letter-spacing: 1.5px;
+    font-weight: 100;
+    text-transform: uppercase;
     padding: 6px 0;
 }
 
-#mid-stat {
-    padding: 30px 0;
+
+li {
+    padding: 10px;
 }
 
 
@@ -121,26 +129,25 @@ p {
         padding-right: 120px;
     }
 
-    .card-image{
-    }
 
     .mobile-img{
         max-width: 750px;
         max-height: 500px;
     }
 
-    .stat{
+    .stat-info {
+        padding: 0;
+    }
+
+    
+    ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .stat-info {
+    li {
         padding: 0;
-    }
-
-    #mid-stat {
-        padding: inherit;
     }
 
 
@@ -156,7 +163,7 @@ p {
 
     
     h1 {
-        font-size: 30px;
+        font-size: 35px;
     }
     
     h2 {
@@ -214,18 +221,9 @@ p {
         mix-blend-mode: multiply ;
     }
 
-    .info  {
-    }
-
-
     .info-para{
         padding-top: 40px;
-        padding-bottom: 90px;
-    }
-
-
-
-    .stat {
+        padding-bottom: 70px;
     }
 
 }

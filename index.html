@@ -10,17 +10,24 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+  
   <title>Frontend Mentor | Stats preview card component</title>
+
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: #3e52a3; }
+  </style>
 
 </head>
 <body>
   <div class="container">
 
-    <div class="card">
+    <main class="card">
 
       <div class="card-image">
-        <img class="mobile-img" src="images\image-header-mobile.jpg">
-        <img class="desktop-img" src="images\image-header-desktop.jpg">
+        <img class="mobile-img"  alt="office-setting" src="images/image-header-mobile.jpg">
+        <img class="desktop-img"  alt="office-setting" src="images/image-header-desktop.jpg">
       </div>
   
       <div class="card-text">
@@ -38,47 +45,35 @@
   
         <div class="stat">
 
-          <div class="stat-info">
-            <div class="stat-num">
-              <h2>10k+</h2>
-            </div>
-            <div class="stat-nam">
-              <h3>COMPANIES</h3>
-            </div>
-          </div>
-          
-          <div class="stat-info" id="mid-stat">
-            <div class="stat-num">
-              <h2>314</h2>
-            </div>
-            <div class="stat-nam">
-              <h3>TEMPLATES</h3>
-            </div>
-          </div>
-
-          <div class="stat-info">
-            <div class="stat-num">
-              <h2>12M+</h2>
-            </div>
-            <div class="stat-nam">
-              <h3>QUERIES</h3>
-            </div>
-          </div>  
+          <ul>
+            <li>
+              <div class="stat-num">10k+</div>
+              <div class="stat-nam">companies</div>
+            </li>
+            <li>
+              <div class="stat-num">314</div>
+            <div class="stat-nam">templates</div>
+            </li>
+            <li>
+              <div class="stat-num">12M+</div>
+            <div class="stat-nam">queries</div>
+            </li>
+          </ul>
 
         </div>
       </div>
 
-    </div>
-
+    </main>
   </div>
   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">TohirBabs</a>.
+  </div>
 
-  <!--
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </div>
-  -->
+  
+    
+  
   
 </body>
 </html>
